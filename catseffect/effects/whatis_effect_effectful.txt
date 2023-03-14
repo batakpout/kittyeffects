@@ -1,0 +1,25 @@
+An effect is what the monad handles. In terms of code,it's how a monad implements its flatMap method
+achieve that effect.
+- Option models the effect of optionality
+- Writer is an monad that models logging as an effect
+
+An effectful function return F[A] rather that [A]
+
+e.g
+def toInt(s: String): Option[Int] =Try(Integer.parseInt(s.trim)).toOption
+So, toInt if effectful, as it returns F[A], a monadic type, so can be used in a for-expression
+
+- Philosophically, if f return A, then it's already been fully evaluated, if it return F[A] then
+  result has not been fully evaluated, as A is still inside F[A]. So effectful f returns a raw 
+  type inside a wrapper which is a monad that lets result used in monadic style(for-exp).
+
+
+Cats-effect provides a concrete tool, IO Monad, for capturing & controlling actions, also referred to as 
+'effects..'
+
+An effect is a description of an action(or actions) that will be taken when evaluation happens.
+
+Critically, a side-effect is not the same thing as an effect. An effect is a description of some action,
+where the action may perform side-effects when executed.
+
+

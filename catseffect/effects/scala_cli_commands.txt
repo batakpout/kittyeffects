@@ -1,0 +1,4 @@
+scala-cli dependency-update --all WhatIsIOProgram.scala 
+
+scala-cli run File.scala
+

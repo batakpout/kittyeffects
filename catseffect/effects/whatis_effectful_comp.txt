@@ -1,0 +1,17 @@
+In Cats Effect, an effectful computation is any computation that has side-effects or can produce different results 
+when called multiple times with the same input. These side-effects could include actions like mutating state, reading 
+or writing to external systems like databases or files, interacting with the network, printing to the console, or 
+anything else that interacts with the outside world.
+
+In contrast to pure functions, which always return the same output for a given input, effectful computations may 
+produce different results when called multiple times with the same input, because they may have side-effects that are 
+dependent on the state of the system at the time they are executed. 
+
+Effectful computations are a necessary part of many programs, as they allow you to interact with the outside world and 
+do things like persist data, read user input, or display output to a user. However, working with effectful 
+computations can introduce complexity and make code harder to reason about, test, and maintain.
+
+Functional programming languages and libraries often provide abstractions and tools for working with effectful 
+computations in a way that preserves referential transparency and allows you to reason about code as if it were pure. 
+For example, in Scala, the Cats Effect library provides the IO data type, which allows you to compose effectful 
+computations in a pure and composable way.
