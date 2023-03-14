@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=po3wmq4S15A    -- FP with effects
+
+https://www.baeldung.com/scala/cats-effects-intro 
+
