@@ -1,0 +1,19 @@
+-- The IO Monad provides a way to wrap input/output actions in a functional context, allowing them to be
+   composed with others f's in a purely functional way.
+
+-- IO is a data type that represents an effectful computation that may perform input/output operations
+-- IO is a datatype for encoding side effects as pure values, capable of expressing both
+   synchronous & asynchronous computations.
+
+-- A value of type IO[A] is a computation which, when evaluated, can perform effects before returning a value of 
+   type A
+
+-- IO values are pure, immutable values & thus preserve referential transparency, being usable in FP. An IO is
+   a data structure that represents just a description of a 'side effectful computation'
+
+-- One of the benefits of using IO is that it allows for resource-safe computation. In other words, it provides
+   a way to acquire & release resources in a safe way, ensuring that resources are always properly cleaned up
+   & released when they are not longer needed.
+
+-- Overall, IO is a powerful tool for performing impure operations in a way that is 
+   safe, composable, & referentially transparent.
